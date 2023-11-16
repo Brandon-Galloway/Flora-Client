@@ -4,7 +4,7 @@
 ![AWSIoTPythonSDK](https://img.shields.io/badge/AWSIoTPythonSDK-v1.5.2-orange.svg)
 
 ## Overview
-The Flora Client is an AWS IoT client to enable the measurement and submission of sensor data to the Flora backend.
+The Flora Client is an AWS IoT client to enable the measurement and submission of sensor data to the [Flora Backend](https://github.com/Brandon-Galloway/Flora).
 
 <details closed>
 <summary> Future Enhancements </summary>  
@@ -35,7 +35,7 @@ Navigate to [AWS IoT Core](https://docs.aws.amazon.com/iot/latest/developerguide
 
 > Manage -> All devices -> Things  
 
-Select "Create Things" and proceed to create a new thing, selecting "Auto-generate a new certificate" and attaching the "Flora_Policy" previously configured during backend deployment.
+Select "Create Things" and proceed to create a new thing, selecting "Auto-generate a new certificate" and attaching the "Flora_Policy" previously configured during [backend](https://github.com/Brandon-Galloway/Flora) deployment.
 
 When prompted, download the supplied private key, public key, certificate, and AmazonRootCA1 files provided and place them in a /certs directory below the project root with the names AmazonRootCA1.pem, cert.pem, private.key, and public.key
 
