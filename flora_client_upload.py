@@ -46,6 +46,7 @@ class FloraClient:
     def get_sensor_readings(self):
         return {
             "SoilTemperature": int((self.soil_sensor.get_temp()*1.8)+32),
+            "SoilMoisture": int(self.soil_sensor.moisture_read()),
             "AirTemperature": int((self.atmospheric_sensor.temperature*1.8)+32),
             "Humidity": int(self.atmospheric_sensor.relative_humidity),
             "Light": int(self.light_sensor.lux),
